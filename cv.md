@@ -17,7 +17,6 @@ My strengths:
 + Responsible
 + Team playing
 
-
 ----
 ## Skills and Proficiency:
 * HTML5, CSS3
@@ -44,14 +43,12 @@ export const priceFilter = (goods, min, max) =>{
 ```
 ----
 ## Courses:
-* Responsive Web Design on freeCodeCamp.org
+* Responsive Web Design on freeCodeCamp.org (finished)
 * JavaScript Manual on learnjavascript.ru (in progress)
 * RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)
-
 ----
 ## Languages:
 * English - Intermediate/Upper-intermediate
 * Russian - Proficiency
 * Kazakh - Native
 * Chinese - Intermediate
- 
