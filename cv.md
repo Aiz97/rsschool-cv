@@ -16,6 +16,7 @@ My strengths:
 + Quick learner
 + Responsible
 + Team playing
++ Googling
 
 ----
 ## Skills and Proficiency:
