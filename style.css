@@ -8,7 +8,7 @@ html {
     box-sizing: border-box;
 	scroll-behavior: smooth;
 }
-body{
+body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Poppins', sans-serif;
@@ -17,7 +17,7 @@ body{
 	background: #1F1F1F;
 	overflow-x: hidden;
 }
-section{
+section {
     padding: 39px 0;
     overflow: hidden;
 }
@@ -31,7 +31,7 @@ p {
 li {
 	list-style: none;
 }
-.logo{
+.logo {
 	background: url('./assets/img/logo.png') no-repeat top left;
   	width: 300px;
 	z-index: 100;
@@ -44,20 +44,20 @@ li {
     margin: 0 auto;
     padding: 0 34px;
 }
-header{
+header {
     width: 100%;
     position: absolute;
     top: 30px;
     left: 0;
     z-index: 1;
 }
-.nav{
+.nav {
     height: 36px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.menu-toggle{
+.menu-toggle {
     color: #fff;
     font-size: 30px;
     position: absolute;
@@ -67,7 +67,7 @@ header{
     cursor: pointer;
     z-index: 1500;
 }
-.fa-times{
+.fa-times {
     display: none;
 }
 .nav-list {
@@ -85,7 +85,7 @@ header{
     transform: translateX(-100%);
     transition: transform .5s;
 }
-.nav::before{
+.nav::before {
     content: '';
     position: fixed;
     top: 0;
@@ -98,23 +98,23 @@ header{
     transform: scale(0);
     transition: opacity .5s;
 }
-.open .fa-times{
+.open .fa-times {
     display: block;
 }
-.open .fa-bars{
+.open .fa-bars {
     display: none;
 }
-.open .nav-list{
+.open .nav-list {
     transform: translateX(0);
 }
-.open .nav::before{
+.open .nav::before {
     opacity: 1;
     transform: scale(1);
 }
-.nav-item{
+.nav-item {
     border-bottom: 2px solid rgba(255, 255, 255, .3);
 }
-.nav-link{
+.nav-link {
     display: block;
     color: #fff;
     font-size: 30px;
@@ -123,10 +123,10 @@ header{
 	font-weight: 400;
 	line-height: 30px;
 }
-.nav-link:hover{
+.nav-link:hover {
     color: white;
 }
-.home{
+.home {
     width: 100%;
 	height: 100vh;
 }
@@ -146,7 +146,7 @@ header{
 .btn {
 	border: none;
 }
-.primary-btn{
+.primary-btn {
 	width: 200px;
 	height: 60px;
 	margin-top: 10px;
@@ -165,20 +165,19 @@ header{
 	padding-top: 20px;
 }
 @media screen and (min-width: 900px){
-  
 	.container {
 		width:100%;
 		max-width: 1225px;
 		margin: 0 auto;
 		padding: 0;
 	}
-    .menu-toggle{
+    .menu-toggle {
         display: none;
     }
     .nav {
         justify-content: space-between;
     }
-    .nav-list{
+    .nav-list {
         position: initial;
         width: initial;
         height: initial;
@@ -189,24 +188,24 @@ header{
         transform: initial;
         transition: initial;
     }
-    .nav-item{
-        margin: 0 24px;
+    .nav-item {
+        margin: 0 20px;
         border: none;
     }
-    .nav-item:last-child{
+    .nav-item:last-child {
         margin-right: 0;
     }
-    .nav-link{
+    .nav-link {
         font-size: 16px;
     }
-	.nav-link:hover{
+	.nav-link:hover {
         color: black;
 		transition: .3s;
     }
-    .active{
+    .active {
         position: relative;
     }
-    .active::before{
+    .active::before {
         content: '';
         position: absolute;
         width: 100%;
@@ -216,7 +215,7 @@ header{
         bottom: -3px;
 		transition: .3s;
     }
-	.home{
+	.home {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
@@ -237,12 +236,12 @@ header{
 		opacity: 0.7;
 		height: 800px;
 	}
-	.home-right img{
+	.home-right img {
 		width: 100%;
 		height: 800px;
 		z-index: 0;
 	}
-	.about{
+	.about {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
@@ -253,7 +252,7 @@ header{
 	.about-left {
 		position: relative;
 	}
-	.about-left img{
+	.about-left img {
 		position: relative;
 		width: 400px;
 		height: 519px;
@@ -281,7 +280,7 @@ header{
 		margin: 0;
 		letter-spacing: 5px;
 	}
-	.first-letter{
+	.first-letter {
 		text-shadow: -6px 0px 2px #443B2C;
 	}
 	.title {
@@ -336,19 +335,48 @@ header{
 		grid-row-gap: 10px;
 		justify-content: center;
 	}
-	.project img{
+	.project img {
 		width: 100%;
 		height: 320px;
 	}
-	.code-example{
+	.code-example {
 		position: relative;
 		width: 80%;
 		background-color: #343331;
 		left: 120px;
 	}
+	.footer {
+		width: 100%;
+		height: 300px;
+		background-color: #443B2C;
+		text-align: center;
+	}
+	.footer-container {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+	}
+	.socials {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-around;
+	}
+	.socials-link {
+		display: flex;
+		align-items: center;
+	}
+	.socials-link img {
+		width: 50px;
+		height: 50px;
+		padding-right: 10px;
+	}
+	.rs-school img{
+		width: 100px;
+	}
 }
 @media screen and (max-width: 768px){
-	.logo{
+	.logo {
 		background: url('./assets/img/logo-dark.png') no-repeat center;
 		width: 100%;
 		z-index: 100;
@@ -361,7 +389,7 @@ header{
 		margin: 0;
 		padding: 0;
 	}
-	.home{
+	.home {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -383,14 +411,14 @@ header{
 		right: 0;
 		z-index: 0;
 	}
-	.home-right img{
+	.home-right img {
 		position: relative;
 		width: 560px;
 		height: 800px;
 		object-fit: fill;
 		top: -80px;
 	}
-	.about{
+	.about {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -400,7 +428,7 @@ header{
 	.about-left {
 		position: relative;
 	}
-	.about-left img{
+	.about-left img {
 		position: relative;
 		width: 400px;
 		height: 519px;
@@ -427,7 +455,7 @@ header{
 		margin: 0;
 		letter-spacing: 5px;
 	}
-	.first-letter{
+	.first-letter {
 		text-shadow: -6px 0px 2px #443B2C;
 	}
 	.skills {
@@ -474,14 +502,14 @@ header{
 		grid-row-gap: 10px;
 		justify-content: center;
 	}
-	.project img{
+	.project img {
 		width: 100%;
 		height: 320px;
 	}
 	.code {
 		margin-left: 40px;
 	}
-	.code-example{
+	.code-example {
 		position: relative;
 		width: 80%;
 		background-color: #343331;
@@ -490,5 +518,33 @@ header{
 	pre {
 		position: relative;
 		left: -200px;
+	}
+	.footer {
+		width: 100%;
+		height: 360px;
+		background-color: #443B2C;
+		text-align: center;
+	}
+	.footer-container {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+	.socials {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.socials-link {
+		display: flex;
+		align-items: center;
+	}
+	.socials-link img {
+		width: 50px;
+		height: 50px;
+		padding-right: 10px;
+	}
+	.rs-school img {
+		width: 100px;
 	}
 }
