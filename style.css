@@ -340,6 +340,12 @@ header{
 		width: 100%;
 		height: 320px;
 	}
+	.code-example{
+		position: relative;
+		width: 80%;
+		background-color: #343331;
+		left: 120px;
+	}
 }
 @media screen and (max-width: 768px){
 	.logo{
@@ -471,5 +477,18 @@ header{
 	.project img{
 		width: 100%;
 		height: 320px;
+	}
+	.code {
+		margin-left: 40px;
+	}
+	.code-example{
+		position: relative;
+		width: 80%;
+		background-color: #343331;
+		left: 10px;
+	}
+	pre {
+		position: relative;
+		left: -200px;
 	}
 }
