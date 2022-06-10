@@ -48,10 +48,6 @@ header{
     left: 0;
     z-index: 1;
 }
-/* .logo img {
-	width: 300px;
-	padding-top: 15px;
-} */
 .nav{
     height: 36px;
     display: flex;
@@ -131,17 +127,6 @@ header{
     width: 100%;
 	height: 100vh;
 }
-/* .split{
-	position: absolute;
-	z-index: 1;
-	top: 0;
-	overflow-x: hidden;
-	overflow-y: hidden;
-}
-.home-left {
-	left: 200px;
-	top: 200px;
-} */
 .subheadline {
 	font-weight: 300;
 	font-size: 25px;
@@ -176,19 +161,6 @@ header{
 	display: inline-block;
 	padding-top: 20px;
 }
-/* .home-right {
-	width: 600px;
-	height: 700px;
-	z-index: 0;
-	top: -80px;
-	right: 108px;
-}
-.home-right img{
-	width: 560px;
-	height: 800px;
-	object-fit: fill;
-} */
-
 @media screen and (min-width: 900px){
     section{
         padding: 79px;
@@ -269,6 +241,48 @@ header{
 		height: 800px;
 		z-index: 0;
 	}
+	.about{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		margin: 0;
+		padding: 70px 0;
+		justify-content: space-around;
+	}
+	.about-left {
+		position: relative;
+	}
+	.about-left img{
+		position: relative;
+		width: 420px;
+		height: 519px;
+		left: 30px;
+		top: 30px;
+		z-index: 1;
+	}
+	.background-rectangle {
+		position: absolute;
+		width: 380px;
+		height: 500px;
+		z-index: 0;
+		background-color: #443B2C;
+	}
+	.about-right {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+		text-align: left;
+		top: 30px;
+	}
+	.about-headline {
+		font-size: 80px;
+		margin: 0;
+		letter-spacing: 5px;
+	}
+	.first-letter{
+		text-shadow: -6px 0px 2px #443B2C;
+	}
 }
 @media screen and (max-width: 768px){
 	.logo{
@@ -305,11 +319,54 @@ header{
 		text-align: center;
 		right: 0;
 		z-index: 0;
-		top: -80px;
+		
 	}
 	.home-right img{
+		position: relative;
 		width: 560px;
 		height: 800px;
 		object-fit: fill;
+		top: -80px;
+	}
+	.about{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 0;
+		padding: 70px 0;
+	}
+	.about-left {
+		position: relative;
+	}
+	.about-left img{
+		position: relative;
+		width: 420px;
+		height: 519px;
+		left: 30px;
+		top: 30px;
+		z-index: 1;
+	}
+	.background-rectangle {
+		position: absolute;
+		width: 380px;
+		height: 500px;
+		z-index: 0;
+		background-color: #443B2C;
+	}
+	.about-right {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		width: 75%;
+		text-align: left;
+		top: 30px;
+	}
+	.about-headline {
+		font-size: 80px;
+		margin: 0;
+		letter-spacing: 5px;
+	}
+	.first-letter{
+		text-shadow: -6px 0px 2px #443B2C;
 	}
 }
