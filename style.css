@@ -166,7 +166,7 @@ header{
 }
 @media screen and (min-width: 900px){
     section{
-        padding: 79px;
+        padding: 0 50px;
     }
 	.container {
 		width:100%;
@@ -304,6 +304,33 @@ header{
 	.skills-title{
 		font-size: 30px;
 	}
+	.education {
+		display: flex;
+		flex-direction: row;
+	}
+	.languages {
+		width: 50%;
+	}
+	.subtitle {
+		font-size: 30px;
+		margin: 0;
+	}
+	.course-name {
+		margin: 0;
+		font-weight: 300;
+	}
+	.progress-bar {
+		width: 300px;
+		height: 20px;
+		background: linear-gradient(90deg, #443B2C 18.63%, #D7D8D2 78.88%);
+		border-radius: 50px;
+		margin: 20px 0;
+	}
+	.course {
+		display: flex;
+		flex-direction: row;
+		margin: 10px;
+	}
 }
 @media screen and (max-width: 768px){
 	.logo{
@@ -402,5 +429,30 @@ header{
 	}
 	.skills-item {
 		text-align: center;
+	}
+	.education {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.subtitle {
+		font-size: 30px;
+		margin: 0;
+	}
+	.course-name {
+		margin: 0;
+		font-weight: 300;
+	}
+	.progress-bar {
+		width: 300px;
+		height: 20px;
+		background: linear-gradient(90deg, #443B2C 18.63%, #D7D8D2 78.88%);
+		border-radius: 50px;
+		margin: 20px 0;
+	}
+	.course {
+		display: flex;
+		flex-direction: row;
+		margin: 10px;
 	}
 }
