@@ -5,7 +5,7 @@ const selectElement = function(element) {
 const menuToggler = selectElement('.menu-toggle');
 let body = selectElement('body');
 
-menuToggler.addEventListener('click', function() {
+menuToggler.addEventListener('click', () => {
     body.classList.toggle('open');
 });
 
@@ -19,3 +19,19 @@ document.addEventListener('mouseover', event => {
       event.target.classList.remove('active')
     }
  });
+
+ $(document).ready(function() {
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 200) {
+      $('.back-to-top').fadeIn(200);
+    } else {
+      $('.back-to-top').fadeOut(200);
+    }
+  });
+  
+  $('.back-to-top').click(function(event) {
+    event.preventDefault();
+    
+    $('html, body').animate({scrollTop: 0}, 300);
+  })
+});

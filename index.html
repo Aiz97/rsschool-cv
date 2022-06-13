@@ -8,6 +8,7 @@
     <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="main.js" defer></script>
 </head>
 <body>
@@ -63,12 +64,12 @@
                     <div class="about-right">
                         <h2 class="about-headline"><span class="first-letter">A</span>bout</h2>
                         <p class="description">
-                            I'm Aizat, Junior Frontend Developer from Almaty, Kazakhstan. 
-                            My name is Aizat I'm a Frontend Developer based in Almaty. I describe myself as a passionate developer who loves coding, open source, and the web platform.
-                            In my free time you can find me reading, running, cooking or on tech meetups and conferences.
+                            My name is Aizat I'm a Frontend Developer based in Almaty. I describe myself as a passionate developer who loves coding, learning new, open source, and the web platform.
+                            In my free time you can find me reading, running, cooking or on tech meetups and conferences. 
                             </p>
                     </div>
                 </section>
+                <a href="#" class="back-to-top"><img src="./assets/icon/slide-up.png" alt=""></a>
             <section id="skills" class="skills">
                 <h2 class="title">My Skills</h2>
                 <div class="skills-pack">
@@ -103,10 +104,20 @@
             <section id="education" class="education">
                 <div class="languages">
                     <h2 class="title">Languages:</h2>
-                    <h3 class="subtitle">English</h3>
-                    <div class="progress-bar"></div>
-                    <h3 class="subtitle">Chinese</h3>
-                    <div class="progress-bar"></div>
+                    <div class="language">
+                        <h3 class="subtitle">English</h3>
+                        <span class="language-level">Good</span>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>  
+                    </div>
+                    <div class="language">
+                        <h3 class="subtitle">Chinese</h3>
+                        <span class="language-level">Good</span>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
                 </div>
                 <div class="courses">
                     <h2 class="title">Courses:</h2>
@@ -144,10 +155,14 @@
                 <div class="code-example">
                     <pre>
                         <code>
-                            document.addEventListener('mouseover', event => {<br>
-                                if(event.target.classList.contains('nav-link')) {<br>
-                                  event.target.classList.add('active')<br>
-                                }<br>
+                            document.addEventListener('mouseover', event => {
+
+                                if(event.target.classList.contains('nav-link')) {
+
+                                  event.target.classList.add('active')
+                                  
+                                }
+
                              });
                         </code>
                     </pre>
