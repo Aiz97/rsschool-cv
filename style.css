@@ -1,0 +1,28 @@
+html {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-weight: normal;
+	vertical-align: baseline;
+    box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+	background: #1F1F1F;
+	color: #ffffff;
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+}
+a {
+    text-decoration: none;
+	color: inherit;
+}
+p {
+    font-size: 18px;
+}
+li {
+	list-style: none;
+}
