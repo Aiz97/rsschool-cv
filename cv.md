@@ -7,7 +7,7 @@
 **Telegram:** @s_aizat
 ----
 ## Briefly About Myself:
-I am 25 years old, looking for a Frontend developer job. My goal is to gain knowledge in the field of front-end development.  
+I am 25 years old, looking for a Frontend developer job. My goal is to gain knowledge in the field of front-end development.
 My strengths:
 + Quick learner
 + Responsible
@@ -21,3 +21,29 @@ My strengths:
 * Git, GitHub
 * Webpack, npm
 ----
+## Code example:
+```export const priceFilter = (goods, min, max) => {
+    return goods.filter((goodsItem) => {
+        if(min === '' & max === ''){
+            return goodsItem
+        } else if (min !== ' & max !== '') {
+            return goodsItem.price > +min && goodsItem.price < +max
+        } else if (min !== '' & max === ''){
+            return goodsItem.price > +min
+        } else if (min === '' && max !== ''){
+            return goodsItem.price < +max
+        }
+    })
+}
+```
+----
+## Courses:
+* Responsible Web Design freeCodeCamp.org (finished)
+* RS Schools Course "JavaScript/Front-end. Stage 0" (finished)
+* RS Schools Course "JavaScript/Front-end. Stage 1" (in progress)
+----
+## Languages:
+* English - intermediate
+* Russian - Proficiency
+* Kazakh - Native
+* Chinese - Intermediate
