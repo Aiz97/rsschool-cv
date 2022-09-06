@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="logo"></div>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#skills" class="nav-link">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#education" class="nav-link">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#projects" class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#code" class="nav-link">Code</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="container">
+            <section id="home" class="home">
+                <div class="home-left">
+                    <span class="subheadline">Welcome</span>
+                    <h1 class="headline">I'm Aizat Sagidollayeva</h1>
+                    <p class="subheadline">Frontend Developer</p>
+                    <a class="cv" href="./assets/aizat-cv.pdf" download>Download CV</a> 
+                </div>
+                <div class="home-right">
+                    <img class="home-photo" src="./assets/img/main.jpg" alt="main-photo">
+                </div>
+            </section>
+                <section id="about" class="about">
+                    <div class="about-left">
+                        <div class="background-rectangle"></div>
+                        <img class="about-photo" src="./assets/img/main.jpg" alt="main-photo">
+                    </div>
+                    <div class="about-right">
+                        <h2 class="about-headline"><span class="first-letter">A</span>bout</h2>
+                        <p class="description">
+                            My name is Aizat I'm a Frontend Developer based in Almaty. I describe myself as a passionate developer who loves coding, learning new, open source, and the web platform.
+                            In my free time you can find me reading, running, cooking or on tech meetups and conferences. 
+                            </p>
+                    </div>
+                </section>
+                <a href="#" class="back-to-top"><img src="./assets/icon/slide-up.png" alt="slide-up"></a>
+            <section id="skills" class="skills">
+                <h2 class="title">My Skills</h2>
+                <div class="skills-pack">
+                    <ul class="skills-list">
+                        <li class="skills-item">
+                            <img class="skills-icon" src="./assets/icon/html5.png" alt="html5">
+                            <p class="skills-title">HTML5</p>
+                        </li>
+                        <li class="skills-item">
+                            <img class="skills-icon" src="./assets/icon/css3.png" alt="css3">
+                            <p class="skills-title">CSS3</p>
+                        </li>
+                        <li class="skills-item">
+                            <img class="skills-icon" src="./assets/icon/js.png" alt="js">
+                            <p class="skills-title">JavaScript</p>
+                        </li>
+                        <li class="skills-item">
+                            <img class="skills-icon" src="./assets/icon/git.png" alt="git">
+                            <p class="skills-title">Git</p>
+                        </li>
+                        <li class="skills-item">
+                            <img class="skills-icon" src="./assets/icon/vue.png" alt="vue">
+                            <p class="skills-title">Vue</p>
+                        </li>
+                        <li class="skills-item">
+                            <img class="skills-icon" src="./assets/icon/webpack.png" alt="webpack">
+                            <p class="skills-title">Webpack</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section id="education" class="education">
+                <div class="languages">
+                    <h2 class="title">Languages:</h2>
+                    <div class="language">
+                        <h3 class="subtitle">English</h3>
+                        <span class="language-level">Good</span>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>  
+                    </div>
+                    <div class="language">
+                        <h3 class="subtitle">Chinese</h3>
+                        <span class="language-level">Good</span>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="courses">
+                    <h2 class="title">Courses:</h2>
+                    <div class="course">
+                        <div class="course-icon">
+                            <img src="./assets/icon/courses.png" alt="course-icon">
+                        </div>
+                        <div class="description">
+                            <h3 class="subtitle">FreeCodeCamp</h3>
+                        <p class="course-name">Responsive Web Design 2022</p>
+                        </div>
+                    </div>
+                    <div class="course">
+                        <div class="course-icon">
+                            <img src="./assets/icon/courses.png" alt="course-icon">
+                        </div>
+                        <div class="description">
+                            <h3 class="subtitle">RS School</h3>
+                        <p class="course-name">JavaScript/Front-End Stage 0</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="projects" class="projects">
+                <h2 class="title">Projects:</h2>
+                <div class="grid">
+                    <a href="https://aiz97.github.io/travelix/" class="project" target="_blank"><img src="./assets/img/travelix.png" alt="travelix"></a>
+                    <a href="https://aiz97.github.io/the-rosa/" class="project" target="_blank"><img src="./assets/img/the-rosa.png" alt="the-rosa"></a>
+                    <a href="https://aiz97-codejam.netlify.app/" class="project" target="_blank"><img src="./assets/img/Eldritch Codejam.png" alt="eldritch-horror"></a>
+                    <a href="https://momentum-aiz97.netlify.app/" class="project" target="_blank"><img src="./assets/img/momentum screenshot.png" alt="momentum"></a>
+                    <a href="https://rolling-scopes-school.github.io/aiz97-JSFEPRESCHOOL2022Q2/travel/" class="project" target="_blank"><img src="./assets/img/travel.png" alt="travel"></a>
+                    <a href="https://aiz97.github.io/alphaeducation/" class="project" target="_blank"><img src="./assets/img/alpha education.png" alt="alpha-education"></a>
+                    <a href="https://aiz97.github.io/memory-game/" class="project" target="_blank"><img src="./assets/img/memory-game.png" alt="memory-game"></a>
+                    <a href="https://github.com/Aiz97/currency-converter" class="project" target="_blank"><img src="./assets/img/currency-converter.png" alt="currency-converter"></a>
+                </div>
+            </section>
+            <section id="code" class="code">
+                <h2 class="title">Code example:</h2>
+                <div class="code-example">
+                    <pre>
+                        <code>
+                            document.addEventListener('mouseover', event => {
+
+                                if(event.target.classList.contains('nav-link')) {
+
+                                  event.target.classList.add('active')
+                                  
+                                }
+
+                             });
+                        </code>
+                    </pre>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container footer-container">
+            <h3 class="subtitle">Contact Me</h3>
+            <ul class="socials">
+                <li class="socials-item">
+                    <a href="https://github.com/Aiz97" class="socials-link" target="_blank"><img src="./assets/icon/github.png" alt="github">GitHub</a>
+                </li>
+                <li class="socials-item">
+                    <a href="mailto:s.aizat21@gmail.com" class="socials-link"><img src="./assets/icon/email.png" alt="email">s.aizat21@gmail.com</a>
+                </li>
+                <li class="socials-item">
+                    <a href="tg://resolve?domain=s_aizat" class="socials-link"><img src="./assets/icon/telegram.png" alt="telegram">Telegram</a>
+                </li>
+            </ul>
+            <span>Copyright &copy; 2022</span>
+            <a href="https://rs.school/js/" class="rs-school" target="_blank"><img src="./assets/img/rs_school_js.svg" alt="rs-school"></a>
+        </div>
+    </footer>
+</body>
+</html>
